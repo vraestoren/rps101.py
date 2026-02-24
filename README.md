@@ -3,8 +3,9 @@ Web-API for [rps101.pythonanywhere.com](https://rps101.pythonanywhere.com) websi
 
 ## Example
 ```python
-import rps101
-rps101 = rps101.RPS101()
-all_objects = rps101.get_all_objects()
+from rps101 import Rps101
+
+rps = Rps101()
+all_objects = rps.get_all_objects()
 print(all_objects)
 ```
