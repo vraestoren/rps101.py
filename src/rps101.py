@@ -15,8 +15,6 @@ class Rps101:
 		return self.session.get(f"{self.api}/objects/{object_name}").json()
 
 	def get_match_result(
-			self,
-			object_one: str,
-			object_two: str) -> dict:
+			self, object_one: str, object_two: str) -> dict:
 		return self.session.get(
 			f"{self.api}/match?object_one={object_one}&object_two={object_two}").json()
